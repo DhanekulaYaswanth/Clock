@@ -44,7 +44,6 @@ function Analog(){
         const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
         sethrs(hourDegrees)
         // hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-        console.log(sec,mins,hrs)
     }
     return(
         <div className="analogclock">
