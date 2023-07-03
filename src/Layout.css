@@ -1,0 +1,83 @@
+.navcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navcontainer>hr{
+    width: 90%;
+    border-color: rgb(59, 59, 59);
+    margin-top: 5px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navcontainer ul{
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+.navcontainer>ul>li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 3px;
+}
+
+
+.itemcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;    
+    height: 100%;
+    margin: 0px;
+}
+
+
+.navicon{
+    color: white;
+    border-radius: 50%;
+    transition: .4s;
+    font-size: 50px;
+    padding: 8px;
+}
+
+.clockicon {
+    color: rgb(54, 203, 232);
+    border: none;
+    padding: 0;
+    box-shadow: 0px 0px 1px 3px rgb(28, 85, 113);
+  }
+  
+
+.stopwatch{
+    color: rgb(137, 251, 255);
+    filter: drop-shadow(3px 3px 3px rgb(39, 39, 39));
+}
+
+
+.timericon{
+    color: rgb(234, 130, 104);
+    filter: drop-shadow(0px 0px 2px rgb(131, 67, 3));
+}
+
+
+.navicon:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width:550px) {
+    .navicon{
+        font-size: 26px;
+    }
+}

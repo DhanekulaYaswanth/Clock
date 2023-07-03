@@ -1,0 +1,222 @@
+
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+.timesetter{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(219, 218, 218);
+}
+
+.numbers{
+    text-align: center;
+
+  }
+
+.numberfirst,.numberlast{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(47, 47, 47);
+}
+
+.numberup,.numberdown{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(84, 83, 83);
+}
+
+.numbermiddle{
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    animation-duration: 1s;
+}
+
+
+  
+  .numbers h1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+
+.layout{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.icon{
+    cursor: pointer;
+    color: rgb(206, 206, 206);
+    font-size: 50px;
+}
+
+.icon:hover{
+    color: rgb(145, 144, 144);
+}
+
+
+
+.starticon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playbutton{
+  color: rgb(0, 76, 255);
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.reset{
+  width: 35px;
+  padding: 20px;
+}
+
+.playbutton:hover{
+  color: blue;
+  background-color: rgb(31, 30, 30);
+}
+
+.startedbuttons{
+  display: flex;
+  position: relative;
+  width: 300px;
+  justify-content: center;
+}
+
+.startingtimer{
+  color: white;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: auto;
+}
+
+
+@media (max-width:1200px) {
+  .maincontainer{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:801px) {
+    .maincontainer{
+      font-size: 13px;
+    }
+    .numbers{
+      text-align: center;
+    }
+    .icon{
+      font-size: 35px;
+    }
+    .numberfirst,.numberlast{
+      font-size: 20px;
+    }
+    .numberup,.numberdown{
+      font-size: 30px;
+    }
+    .numbermiddle{
+      font-size: 40px;
+    }
+    .layout{
+          margin: 0px;
+    }
+    .playbutton{
+      width: 25px;
+      height: 25px;
+      padding: 15px;
+      font-size: 20px;
+    }
+}
+
+@media (max-width:500px) {
+  .maincontainer{
+    font-size: 12px;
+  }
+  .icon{
+    font-size: 30px;
+  }
+  .numberfirst,.numberlast{
+    font-size: 16px;
+  }
+  .numberup,.numberdown{
+    font-size: 25px;
+  }
+  .numbermiddle{
+    font-size: 30px;
+  }
+  .layout{
+        margin: 0px;
+  }
+  .numbermiddle{
+    width: 80px;
+  }
+  .playbutton{
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+@media (max-width:300px) {
+  .maincontainer{
+    font-size: 10px;
+  }
+  .icon{
+    font-size: 30px;
+  }
+  .numberfirst,.numberlast{
+    font-size: 13px;
+  }
+  .numberup,.numberdown{
+    font-size: 20px;
+  }
+  .numbermiddle{
+    font-size: 25px;
+  }
+  .layout{
+    margin: -11px;
+  }  
+  .reset{
+    width: 10px;
+    padding: 10px;
+  }
+}
