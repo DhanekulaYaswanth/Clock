@@ -8,7 +8,7 @@ import Timer from "./components/Countdowntimer/Timer.js";
 
 function App(){
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="/clock">
       <Routes>
         <Route path='/' element={<Layout/>} className="routing">
           <Route index element={<Clock/>}></Route>
